@@ -74,4 +74,13 @@ string add(string a, string b)
       s += std::to_string(result[i--]);
    return s;
 }
+    int mod(string num, int a)
+{
+   int res = 0;
+
+   for (int i = 0; i < num.length(); i++)
+      res = (res * 10 + (int)num[i] - '0') % a;
+
+   return res;
+}
 };
