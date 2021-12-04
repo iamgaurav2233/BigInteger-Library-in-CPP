@@ -1,6 +1,6 @@
 class BigInteger{
 public:
-string add_Num(string a, string b)
+string add(string a, string b)
 {
     string sum = "";
     long long i = (long long)a.size() - 1, j = (long long)b.size() - 1;
@@ -22,7 +22,7 @@ string add_Num(string a, string b)
     return sum;
 }
 
-   string multiply(string num1, string num2)
+   string mul(string num1, string num2)
 {
    string s = "";
    if((num1.at(0) == '-' || num2.at(0) == '-') &&
